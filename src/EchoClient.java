@@ -1,6 +1,22 @@
 import java.io.*;
 import java.net.*;
 
+/**
+ * A simple echo client that connects to a server and sends it data,
+ * and then prints out the data that the server echoes back to the client.
+ *
+ * To use the client, specify the server hostname and port number as
+ * command-line arguments. For example:
+ *
+ *      java EchoClient localhost 4444
+ *
+ * This would start the client running on the local machine, connecting
+ * to a server running on the same machine on port 4444.
+ *
+ * The client will continue running until the user types `Ctrl+C` to
+ * interrupt the program.
+ */
+
 public class EchoClient {
     public static void main(String[] args) throws IOException {
         Socket echoSocket = null;
